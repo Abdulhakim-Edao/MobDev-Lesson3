@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:text="DinnerDecide"
+        android:textSize="11pt"
+        android:background="@color/teal_700"
+        android:gravity="center_vertical|left"
+        >
+
+    </TextView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+    </Space>
+
+    <ImageView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_gravity="center"
+        android:src="@drawable/img"
+        >
+
+    </ImageView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+    </Space>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text=" "
+        android:textSize="45sp"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+    </Space>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="600px"
+        android:layout_height="150px"
+        android:layout_gravity="center"
+        android:hint="Add new Food">
+
+    </EditText>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+
+    </Space>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="600px"
+        android:layout_height="175px"
+        android:text="Add Food"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="addbtnClicked"
+        >
+
+    </Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+    </Space>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Decide!"
+        android:onClick="addbtnClicked">
+
+    </Button>
+
+
+</LinearLayout>
