@@ -5,25 +5,26 @@
     android:background="@color/purple_200"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:scrollbarAlwaysDrawVerticalTrack="true"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+         >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="45sp"
-        android:text="DinnerDecide"
-        android:textSize="11pt"
-        android:background="@color/teal_700"
-        android:gravity="center_vertical|left"
-        >
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45sp"-->
+<!--        android:text="DinnerDecide"-->
+<!--        android:textSize="11pt"-->
+<!--        android:background="@color/teal_700"-->
+<!--        android:gravity="center_vertical|left"-->
+<!--        >-->
 
-    </TextView>
+<!--    </TextView>-->
 
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="200px">
+        android:layout_height="100px">
 
     </Space>
 
@@ -37,7 +38,7 @@
     </ImageView>
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100px">
+        android:layout_height="50px">
 
     </Space>
     <TextView
@@ -52,7 +53,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="200px">
+        android:layout_height="10px">
 
     </Space>
 
@@ -72,7 +73,7 @@
     <Button
         android:id="@+id/btn1"
         android:layout_width="600px"
-        android:layout_height="175px"
+        android:layout_height="150px"
         android:text="Add Food"
         android:layout_gravity="center"
         android:backgroundTint="@color/teal_700"
@@ -81,22 +82,32 @@
 
     </Button>
 
-    <Space
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100px">-->
+
+<!--    </Space>-->
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200px">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
 
-    </Space>
+        >
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="Decide!"
+            android:onClick="addbtnClicked">
+
+        </Button>
+    </LinearLayout>
 
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:backgroundTint="@color/teal_700"
-        android:text="Decide!"
-        android:onClick="addbtnClicked">
-
-    </Button>
 
 
 </LinearLayout>
